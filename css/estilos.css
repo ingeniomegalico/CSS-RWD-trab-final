@@ -1,6 +1,7 @@
 body {
   background-color: #02010a;
   font-family: 'Dancing Script', cursive;
+  font-size: 1em;
 
 /* NOTE: estilos del menu header */
 }
@@ -15,7 +16,8 @@ body {
   flex-wrap: nowrap;
   align-items: flex-start;
   background-color: #5b7989;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   height: 100px;
 
   }
@@ -75,14 +77,12 @@ nav {
   align: center;
   padding-left: 10%;
   padding-bottom: 5%;
-
-
-
+  padding-top: 5%;
 
 }
 
 
-
+/* NOTE: container 3 contiene los estilos de la img secuandarias  */
 .container3 {
   background-color: #d5c75f;
   height: 50%;
@@ -103,6 +103,11 @@ div img {
   padding: 5%;
 }
 
+/* NOTE: estilos del footer */
+
+article, footer {
+  text-align: center;
+}
 
 .container4 {
   background-color: #C6d5c5;
@@ -113,20 +118,28 @@ div img {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap
-
+  flex-wrap: nowrap;
+  padding-right: 1px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .container4 div {
   width: 25%;
-  font-size: 1em;
+
 
 }
 
 a {
   color: white;
-
 }
+
+.rrss a img {
+  width: 7%;
+}
+
+
+/* NOTE: otros estilos  */
 
 #activepage {
   text-decoration: none;

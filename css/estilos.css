@@ -2,10 +2,15 @@ body {
   background-color: #02010a;
   font-family: 'Dancing Script', cursive;
   font-size: 1em;
-
-/* NOTE: estilos del menu header */
 }
 
+img {
+  -webkit-box-shadow: 2px 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px 2px #02010a;
+  box-shadow: 5px 5px 2px 2px #02010a;
+}
+
+/* NOTE: estilos del menu header */
 .container1 {
   display: -webkit-box;
   display: -moz-box;
@@ -13,7 +18,6 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-items: flex-start;
   background-color: #5b7989;
   border-top-left-radius: 10px;
@@ -55,8 +59,6 @@ nav {
 /* NOTE: ediciones de la imagen central */
 
 .container2 {
-  width: 100%x;
-  height: 70%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -65,43 +67,32 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: #82c3a6;
-}
-
-
-.imagen_central {
-  display: flex;
-  width: 80%;
-  height: 80%;
-  display: flex;
   align-items: center;
-  align: center;
-  padding-left: 10%;
-  padding-bottom: 5%;
-  padding-top: 5%;
-
 }
+
+.container2 img {
+  width: 60%;
+  align-items: center;
+  margin: 2% auto;
+}
+
 
 
 /* NOTE: container 3 contiene los estilos de la img secuandarias  */
 .container3 {
   background-color: #d5c75f;
-  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
 .container3 div {
-  height: 50%;
-  width: 50%;
+  width: 100%;
   flex-flow: row;
-
 }
 
-div img {
-  width: 70%;
-  padding: 5%;
-
+.container3 div img {
+  margin: 3% auto;
 }
 
 /* NOTE: estilos del footer */
@@ -110,6 +101,12 @@ article, footer {
   text-align: center;
 }
 
+footer img {
+  box-shadow: 0px 0px 0px 0px;
+  margin: 3px auto;
+  -webkit-filter:greyscale(100%);
+  filter: grayscale(100%);
+}
 .container4 {
   background-color: #C6d5c5;
   width: 100%;
@@ -120,15 +117,13 @@ article, footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-right: 1px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin: 0 auto;
 }
 
 .container4 div {
   width: 25%;
-
-
 }
 
 a {
@@ -163,12 +158,143 @@ a {
 
 /* NOTE: animaciones */
 
-@-webkit-keyframes animacion1{
- from:
+.imgizq {
+padding: 3%;
+}
 
-  }
+.imgizq img {
+width:60%;
+transition: 1s;
+}
 
-  to{
+.imgizq img:hover{
+  -webkit-box-shadow: 2px 2px 1px 3px #82c3a6;
+  -moz-box-shadow: 2px 2px 1px 3px #82c3a6;
+  box-shadow: 5px 5px 1px 3px #82c3a6;
+  transform: rotate(15deg);
+}
 
-  }
+.imgizq{
+padding: 5%;
+text-align: center;
+width:60%;
+}
+
+/* NOTE: animaciones de la imagen derecha  */
+
+.imgder img {
+  width:60%;
+  transition: 1s;
+}
+
+.imgder img:hover{
+  -webkit-box-shadow: 2px 2px 1px 3px #82c3a6;
+  -moz-box-shadow: 2px 2px 1px 3px #82c3a6;
+  box-shadow: 5px 5px 1px 3px #82c3a6;
+  transform: translate(20px,-5px);
+}
+
+.imgder{
+  padding: 3%;
+  text-align: center;
+  width:60%;
+}
+
+/* NOTE: ediciones de estilo paginas secundarias */
+
+.container5 {
+  background-color: #d5c75f;
+  padding: 5%
+}
+
+.container5 div {
+  width: 30%;
+  display: inline-block;
+}
+
+.container5 div img {
+  width: 90%;
+  flex: auto;
+}
+
+@media(max-width:900px){
+
+.container1 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.container2 div {
+  height: 100% auto;
+  width: 100%
+}
+
+.container2 div img {
+  height: 100%;
+
+}
+
+  .container3 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.container3 div {
+  width: 70% auto;
+  height: auto;
+  margin-top: 0;
+
+}
+
+.container3 div img {
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin: 1% auto;
+  padding: 1% auto;
+}
+
+.container4 {
+  height: auto;
+  width: 100%
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.container4 div {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.container5 {
+
+  height: auto;
+  width: 100%
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.container5 div {
+  height: auto;
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.container5 div img {
+ margin: 1%;
 }

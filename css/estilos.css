@@ -10,6 +10,11 @@ img {
   box-shadow: 5px 5px 2px 2px #02010a;
 }
 
+.container1 {
+  animation: animacionheader 1s;
+}
+
+
 /* NOTE: estilos del menu header */
 .container1 {
   display: -webkit-box;
@@ -200,6 +205,22 @@ width:60%;
   width:60%;
 }
 
+/* NOTE: animaciones del header */
+
+@-webkit-keyframes animacionheader {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+
+}
+
+
 /* NOTE: ediciones de estilo paginas secundarias */
 
 .container5 {
@@ -216,6 +237,8 @@ width:60%;
   width: 90%;
   flex: auto;
 }
+
+/* NOTE: version movil */
 
 @media(max-width:900px){
 
